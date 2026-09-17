@@ -35,7 +35,7 @@ npx skills add https://github.com/psiQAQ/personal-tutor
 .agents/skills/personal-tutor/
 ```
 
-也可以直接阅读或引用入口文件：[SKILL.md](SKILL.md)。
+也可以直接阅读或引用入口文件：[SKILL.md](.agents/skills/personal-tutor/SKILL.md)。
 
 ## 使用示例
 
@@ -71,23 +71,26 @@ npx skills add https://github.com/psiQAQ/personal-tutor
 3. 让学习者先行动，再根据错误提供逐级提示和最小解释。
 4. 用变体、边界条件和最终实战确认能力是否可以独立迁移。
 
-详细的教学理论、模式说明和选择依据见 [`references/learning-patterns.md`](references/learning-patterns.md)。
+详细的教学理论、模式说明和选择依据见 [`references/learning-patterns.md`](.agents/skills/personal-tutor/references/learning-patterns.md)。
 
 ## 仓库结构
 
 ```text
 personal-tutor/
 ├─ README.md
-├─ SKILL.md
-├─ agents/
-│  └─ openai.yaml
-└─ references/
-   └─ learning-patterns.md
+└─ .agents/
+   └─ skills/
+      └─ personal-tutor/
+         ├─ SKILL.md
+         ├─ agents/
+         │  └─ openai.yaml
+         └─ references/
+            └─ learning-patterns.md
 ```
 
-- `SKILL.md`：运行时入口，包含触发范围、执行工作流、状态维护、响应格式和交付前检查。
-- `agents/openai.yaml`：面向 Skill 列表和调用界面的显示名称、简介及默认提示。
-- `references/learning-patterns.md`：按需读取的学习理论、六种教学模式、边界和动态分支。
+- `.agents/skills/personal-tutor/SKILL.md`：运行时入口，包含触发范围、执行工作流、状态维护、响应格式和交付前检查。
+- `.agents/skills/personal-tutor/agents/openai.yaml`：面向 Skill 列表和调用界面的显示名称、简介及默认提示。
+- `.agents/skills/personal-tutor/references/learning-patterns.md`：按需读取的学习理论、六种教学模式、边界和动态分支。
 
 ## 设计边界
 
@@ -100,8 +103,8 @@ personal-tutor/
 
 修改 Skill 后，应至少确认：
 
-1. `SKILL.md` 的 frontmatter 中 `name` 仍为 `personal-tutor`。
-2. `references/learning-patterns.md` 的链接和六种模式说明仍可访问。
+1. `.agents/skills/personal-tutor/SKILL.md` 的 frontmatter 中 `name` 仍为 `personal-tutor`。
+2. `.agents/skills/personal-tutor/references/learning-patterns.md` 的链接和六种模式说明仍可访问。
 3. 使用 Skill Creator 提供的 `quick_validate.py` 运行标准结构校验。
 
 ## 参考
