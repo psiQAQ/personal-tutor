@@ -106,7 +106,3 @@ personal-tutor/
 1. `.agents/skills/personal-tutor/SKILL.md` 的 frontmatter 中 `name` 仍为 `personal-tutor`。
 2. `.agents/skills/personal-tutor/references/learning-patterns.md` 的链接和六种模式说明仍可访问。
 3. 使用 Skill Creator 提供的 `quick_validate.py` 运行标准结构校验。
-
-## 参考
-
-本 README 的信息架构参考 [Blender MCP Skills Toolkit](https://github.com/psiQAQ/blender_mcp-setup-guide) 的项目定位、调用示例、能力概览、安装和仓库结构组织方式。
